@@ -1,0 +1,7 @@
+LICENSE
+README.md
+Makefile
+Dockerfile
+skaffold.yaml
+
+.deploy/

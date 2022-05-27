@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+build:
+  artifacts:
+  - image: app
+  local: {}
+deploy:
+  kustomize:
+    paths:
+    - .deploy/kustomize/overlays/dev
