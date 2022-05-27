@@ -1,7 +1,7 @@
 # Go targets
 .PHONY: go.tests go.build go.lint
 go.tests:
-	@go test ./...
+	@ginkgo run ./...
 
 go.build:
 	go build -o app main.go

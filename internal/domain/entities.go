@@ -6,8 +6,10 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
+type EntityID string
+
 type Entity struct {
-	ID string `validate:"required,uuid4"`
+	ID EntityID `validate:"required,uuid4"`
 }
 
 func (e Entity) Validate(v *validator.Validate) error {
